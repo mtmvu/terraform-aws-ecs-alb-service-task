@@ -582,3 +582,9 @@ variable "pid_mode" {
     error_message = "The pid_mode value must be one of host or task."
   }
 }
+
+variable "track_latest" {
+  type        = bool
+  description = "Whether to track the latest task definition revision in the service"
+  default     = false
+}
